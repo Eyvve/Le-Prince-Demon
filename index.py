@@ -6,17 +6,14 @@ index_wapone = {
     'épée rouillé' : [1.2],#multiplicateur d'atk
     "épée en fer" : [1.4],
     "rapière" : [1.8],
-    "épéee obscur" : [2]
+    "épéee obscur" : [2],
 }
 index_armor = {
     #'armure'  :  [multiplicateur de def, emplacement] 1 = head / 2 = torso / 3 = leg / 4 = foot
     #cape de départ
-    'cape noir' : [1.2, 2],
-    #armure cuir
-    'casque en cuir' : [1.2, 1],
-    'plastron en cuir' : [1.4, 2],
-    'jambière en cuir' : [1.4, 3],
-    'botte en cuir' : [1.2, 4],
+    'cape noir' : [1],
+    'armure en cuir' : [4],
+    'armure en fer' : [8],
 }
 
 index_objet = {
@@ -42,7 +39,20 @@ index_objet = {
     'Slip de Gobelin': [5],
 
 }
-
+index_objet_sell = {
+    #objet
+    'Potion de soin n1': [60],  # [Prix, PV,gagne des pv]
+    'Potion de soin n2': [180],
+    'Potion de soin n3': [360],
+    'Potion de mana n1': [180],  # [Prix, PM,gagne des pm]
+    'Potion de mana n2': [360],
+    'Potion de mana n3': [720],
+    #wapon
+    "rapière noir" : [60],
+    "épée obscur" : [250],
+    #armor
+    'armure en cuir' : [80],
+}
 
 defeated =  {
     'gold' : {
@@ -50,7 +60,7 @@ defeated =  {
     }}
 
 chest1 = {
-'gold' : {
+    'gold' : {
         'Argent' : 30,
     },
     "inv": {

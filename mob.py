@@ -11,13 +11,10 @@ char = {
     },
     'hands' :{
         'hand1' : 'épée rouillé',
-        'head' : None,
-        'torso' : None,
-        'leg' : None,
-        'foot' : None,
+        'armor' : 'cape noir'
     },
     'gold' : {
-        'Argent' : 10,
+        'Argent' : 10000,
     },
     'inv' : {
         'Potion de soin n1' : 2,
@@ -33,8 +30,27 @@ char = {
 ###"""Inventaire du Hero ne pas toucher"""
 
 
+#vendeur :
+vendeur1 ={
+    'buy' : {
+        'Potion de soin n1': [20, 1, 1],
+        'Potion de mana n1': [10, 1, 2],
+        'armure en cuir' : [1, 3],
+    },
+    'inv1' :{
+        'Potion de soin n1': 1,
+    },
+    'inv2' :{
+        'Potion de mana n1': 1,
+    },
+    'equipement' : {
 
+    },
+    'armor' :{
+        'armure en cuir' : 1
+    }
 
+}
 #mobs
 fermier = {
     'nom' : "Fermier",
@@ -59,7 +75,7 @@ chevalier = {
         'Argent' : randint(10, 13),
     },
     'inv': {
-        "Armoirie de chevalier": randint(0,1)
+        "Armoirie de chevalier": randint(0,6)
     }
 }
 

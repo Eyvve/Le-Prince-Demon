@@ -123,7 +123,22 @@ def use_objet() :
                             Prince_stats[10] = Prince_stats[14]
                         print("")
                         print("Vie :", Prince_stats[5],"/",Prince_stats[13], "Mana :", Prince_stats[10], "/", Prince_stats[14])
-                        return
+                        print("Utiliser un autre obejt ? :")
+                        print("1. oui")
+                        print("2. non")
+                        while True:
+                            choix = input("Choix :")
+                            if str(choix) == "":
+                                print("Choix indisponnible.")
+                            else:
+                                if int(choix) >= 1 or int(choix) <= 2:
+                                    if int(choix) == 1:
+                                        use_objet()
+                                        return
+                                    elif int(choix) == 2:
+                                        return
+                                else:
+                                    print("Choix indisponnible.")
 
 
 

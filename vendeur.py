@@ -149,3 +149,6 @@ def vendeur(vendeur):
                     return
             else:
                 print("Choix indisponnible.")
+
+
+menu()

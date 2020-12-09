@@ -31,6 +31,8 @@ def update_niv(xp1) :
 
 # permet la monter des stats du hero quand il gagne un niveau
 # exemple : update_stats(char['stats'])
+
+
 def update_stats():
     Prince_stats[1] += 1
     Prince_stats[2] += 1

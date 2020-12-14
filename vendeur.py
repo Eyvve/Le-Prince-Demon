@@ -132,7 +132,6 @@ def vendeur(vendeur):
     print("1. acheter")
     print("2. vendre")
     print("3. quitter")
-    choix = 0
     while True:
         choix = input("Choix :")
         if str(choix) == "":

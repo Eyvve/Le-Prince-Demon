@@ -2,7 +2,7 @@ import pygame
 import os
 from time import sleep
 from maps import *
-from Music_sounds import*
+from Music_sounds import *
 from about import *
 from combat import *
 from demo import *

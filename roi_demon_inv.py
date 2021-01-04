@@ -260,7 +260,7 @@ def menu_roi() :
     print("Voulez vous faire quelque chause ?")
     print("1. Inventaire")
     print("2. Sauvgarder")
-    print("3. Quitter")
+    print("3. Continuer")
     while True :
         choix = input("Choix :")
         if str(choix) == "":
@@ -271,7 +271,7 @@ def menu_roi() :
                     print(roi_demon['gold']['Argent'], "or.")
                     print("1. Objet")
                     print("2. Équipement")
-                    print('3. Quitter')
+                    print('3. Retour')
                     while True:
                         choix = input("Choix :")
                         if str(choix) == "":
@@ -282,7 +282,7 @@ def menu_roi() :
                                     print("Vie :", Roi_demon_stats[5],"/",Roi_demon_stats[13], "Mana :", Roi_demon_stats[10],"/",Roi_demon_stats[14])
                                     print_objet_roi()
                                     print("1. Utiliser un objet")
-                                    print("2. Quitter")
+                                    print("2. Retour")
                                     while True:
                                         choix = input("Choix :")
                                         if str(choix) == "":
@@ -291,11 +291,9 @@ def menu_roi() :
                                             if int(choix) >= 1 or int(choix) <= 2:
                                                 if int(choix) == 1:
                                                     use_objet_roi()
-                                                    choix = 0
-                                                    return
+                                                    menu_roi()
                                                 elif int(choix) == 2:
-                                                    choix = 0
-                                                    return
+                                                    menu_roi()
                                             else:
                                                 print("Choix indisponnible.")
                                 elif int(choix) == 2:
@@ -305,7 +303,7 @@ def menu_roi() :
                                         print("Vous avez", roi_demon['hands']['armor'], "d'équipé.")
                                     print("1. Equiper une arme")
                                     print("2. Equiper une armure")
-                                    print("3. Quitter")
+                                    print("3. Retour")
                                     while True:
                                         choix = input("Choix :")
                                         if str(choix) == "":
@@ -314,20 +312,16 @@ def menu_roi() :
                                             if int(choix) >= 1 or int(choix) <= 2:
                                                 if int(choix) == 1:
                                                     use_equipement_wapon_roi()
-                                                    choix = 0
-                                                    return
+                                                    menu_roi()
                                                 elif int(choix) == 2:
                                                     use_equipement_armor_roi()
-                                                    choix = 0
-                                                    return
+                                                    menu_roi()
                                                 elif int(choix) == 3:
-                                                    choix = 0
-                                                    return
+                                                    menu_roi()
                                             else:
                                                 print("Choix indisponnible.")
                                 elif int(choix) == 3:
-                                    choix = 0
-                                    return
+                                    menu_roi()
                             else:
                                 print("Choix indisponnible.")
                 elif int(choix) == 2 : #sauvgarder :
@@ -351,19 +345,20 @@ def menu_roi() :
                                             print("Choix indisponnible.")
                                         if int(choix) == 1 or int(choix) == 2:
                                             if int(choix) == 1:
-                                                choix = 0
                                                 titlebis()
                                                 return
                                             elif int(choix) == 2:
-                                                choix = 0
-                                                return
+                                                menu_roi()
                                         else:
                                             print("Choix indisponnible.")
+                                elif int(choix) == 2:
+                                    menu_roi()
                             else:
                                 print("Choix indisponnible.")
                 elif int(choix) == 3:
-                    choix = 0
                     return
             else:
                 print("Choix indisponnible.")
+
+
 menu_roi()
